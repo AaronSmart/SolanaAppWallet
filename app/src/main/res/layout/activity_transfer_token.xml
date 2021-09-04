@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/common_head" />
+    <LinearLayout
+        android:id="@+id/lyContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp">
+                        <!-- ===========================Sign in============================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="80dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Transfer SOL Or SPL Token"
+                                android:textSize="24dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <!-- ===========================Document Type============================================-->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="50dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            >
+
+                            <TextView
+                                android:id="@+id/txDocumentType"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Document Type" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lyDocumentType"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/tvDocumentType"
+                                    style="@style/text_left"
+                                    android:text="ID Card"
+                                     />
+
+                                <TextView
+                                    android:id="@+id/tvCard"
+                                    style="@style/edit_right"
+                                    android:layout_marginLeft="15dp"
+                                    android:drawablePadding="10dp"
+                                    android:drawableRight="@drawable/add_more"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingBottom="0dp"
+                                    android:paddingRight="2dp"
+                                    android:paddingTop="2dp"
+                                    android:text="" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- ============================Account Address===========================================-->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="40dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txName"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Account Address" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/etAccountAddress"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:hint="Enter account address"
+                                android:maxLength="50"
+                                android:text="" />
+
+                            <ImageView
+                                android:id="@+id/ivTokenSearch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/search_scan" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Amount ===========================================-->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txPassword"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Amount" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/etAmount"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:maxLength="50"
+                                android:hint="Enter the amount"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================get fees===========================================-->
+                        <TextView
+                            android:id="@+id/tvGetFees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="fee ≈ 0.00005SOL"
+                            android:textSize="16sp" />
+                        <!-- ============================submit button ===========================================-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="fill_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentBottom="true"-->
+<!--                            android:layout_marginVertical="30dp"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:orientation="horizontal">-->
+<!--                        </LinearLayout>-->
+                        <LinearLayout
+                            android:id="@+id/lyLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="14pt"
+                            android:layout_marginRight="14pt"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center"
+                            android:background="@drawable/buttonchange"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Transfer"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

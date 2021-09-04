@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F7F7F7">
+        <!-- <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="60dp">
+             <RelativeLayout android:id="@+id/rl_info" android:layout_width="wrap_content" android:layout_height="match_parent">
+                 <ImageView android:id="@+id/iv_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:src="@drawable/home_title_head" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                 <TextView android:textSize="22sp" android:textColor="#2b73bf" android:id="@+id/tv_xm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="张三" android:layout_toRightOf="@+id/iv_head" android:layout_centerVertical="true"/>
+             </RelativeLayout>
+             <RelativeLayout android:id="@+id/rl_msg" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+                 <ImageView android:id="@+id/iv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_title_message" android:layout_centerVertical="true"/>
+                 <RelativeLayout android:id="@+id/rl_pop" android:background="@drawable/home_title_message_pop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10dp" android:layout_toRightOf="@+id/iv_message">
+                     <TextView android:textColor="#ffffff" android:id="@+id/tv_pop_counts" android:paddingLeft="3dp" android:paddingRight="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_centerInParent="true"/>
+                 </RelativeLayout>
+             </RelativeLayout>
+             <com.iwhalecloud.app.homepage.MarqueTextView android:textSize="18sp" android:textColor="#2b73bf" android:text="道路安全守护神 我是最帅交警 民警是我民警是我"
+             android:ellipsize="marquee" android:id="@+id/tv_dqqw" android:focusable="true" android:focusableInTouchMode="true"
+             android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:scrollHorizontally="true"
+             android:singleLine="true" android:layout_toLeftOf="@+id/rl_msg" android:layout_toRightOf="@+id/rl_info" android:layout_centerVertical="true"
+             android:marqueeRepeatLimit="marquee_forever"/>
+             <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/home_title_line" android:layout_alignParentBottom="true"/>
+         </RelativeLayout>  -->
+       <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="#F7F7F7" android:layout_width="match_parent" android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/lyPersonalInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal"
+                    android:background="#F7F7F7"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/home_personal_head" />
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:text="Nelle Briggs" />
+                </LinearLayout>
+
+                <!--add Phone Number-->
+                <LinearLayout
+                    android:id="@+id/lyPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_blue_search"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/phoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:text="Phone Number"
+                        />
+                    <TextView
+                        android:id="@+id/tvPhone"
+                        style="@style/edit_right"
+                        android:hint="150******23" />
+                </LinearLayout>
+                <!--add health badge-->
+                <LinearLayout
+                    android:id="@+id/lyHealth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_blue_search"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:id="@+id/tvHealthBadge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:text="My SOL Address" />
+                    <TextView
+                        android:id="@+id/tvHealthBadge3"
+                        style="@style/edit_right"
+                        android:drawableRight="@mipmap/qrcode" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lyWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_blue_search"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txWallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:text="Import mnemonic words" />
+                    <TextView
+                        android:id="@+id/tvWallet"
+                        style="@style/edit_right"
+                        android:drawableRight="@mipmap/right_arrow" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lyCopyToClipboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_blue_search"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txCopyToClipboard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:text="Copy mnemonic words to clipboard" />
+                    <TextView
+                        android:id="@+id/tvCopyToClipboard"
+                        style="@style/edit_right"
+                        android:drawableRight="@mipmap/right_arrow" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lyClearClipboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_blue_search"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txClearClipboard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:text="Clear mnemonic words in clipboard" />
+                    <TextView
+                        android:id="@+id/tvClearClipboard"
+                        style="@style/edit_right"
+                        android:drawableRight="@mipmap/right_arrow" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lyDonate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_blue_search"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txDonate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:text="Copy Donate Address" />
+                    <TextView
+                        android:id="@+id/tvDonate2"
+                        style="@style/edit_right"
+                        android:drawableRight="@mipmap/right_arrow" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lyReadme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_blue_search"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txReadme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:text="About this App(V1.0.0)" />
+                    <TextView
+                        android:id="@+id/tvReadme"
+                        style="@style/edit_right"
+                        android:drawableRight="@mipmap/right_arrow" />
+                </LinearLayout>
+                <!--change the password -->
+                <LinearLayout
+                    android:id="@+id/lyPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_blue_search"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/txPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:text="Change The Password" />
+                    <TextView
+                        android:id="@+id/tvChangePassword"
+                        style="@style/edit_right"
+                        android:drawableRight="@mipmap/right_arrow" />
+                </LinearLayout>
+                <!-- ================================-log out-->
+                <LinearLayout
+                    android:id="@+id/lyLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_blue_search"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Log Out"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
