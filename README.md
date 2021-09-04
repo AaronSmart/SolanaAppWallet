@@ -19,11 +19,11 @@ MarketId: J8t6UBqKr44NtSY6oZa21rJxyZkNAophgmG2unnSy36p
 
 WhitePaper: http://www.kikenn.com/app/whitepaper.pdf
 
-Goal：One stop DeFi portal links global digital assets, integrates cross chain, transaction and lending, and accelerates Web3.0 
+Goal：One-stop DeFi portal links global digital assets, integrates cross chain, transaction and lending, and accelerates Web3.0 
 
 Solana APP is another version of sollet wallet for mobile 
 
-Solana standard layered deterministic wallet, standard HD path m/44'/501'/0'/0' 
+Solana standard Hierachical Deterministic Wallet, standard HD path m/44'/501'/0'/0' 
 
 The public key generation curve is ed25519 Use the official standard generation method. 
 
