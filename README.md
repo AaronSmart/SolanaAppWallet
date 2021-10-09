@@ -1,5 +1,7 @@
 # the owner account Mnemonic words has being leaked, it's very nice for you to return the part of tokens, otherwise the  project will die 
 # Connect me with email if you have any questions： AaronSmart@qq.com
+# I feel so sorry to bring too much troblues, give me some time to correct,it's hard to bulid this project alone without any income, sorry again!
+# don't trade  for the ULA token now
 # SolanaAppWallet
 Solana APP Standard Wallet
 
