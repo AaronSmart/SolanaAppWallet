@@ -1,3 +1,5 @@
+# the owner account Mnemonic words has being leaked, it's very nice for you to return the part of tokens, otherwise the  project will die 
+# Connect me with email if you have any questions： AaronSmart@qq.com
 # SolanaAppWallet
 Solana APP Standard Wallet
 
