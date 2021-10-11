@@ -1,7 +1,8 @@
-# the owner account Mnemonic words has being leaked, it's very nice for you to return the part of tokens, otherwise the  project will die 
+# the owner account Mnemonic words has being leaked, all tokens are gone, it's very nice for you to return the part of tokens,thank you again (2021-10-8)
 # Connect me with email if you have any questions： AaronSmart@qq.com
-# I feel so sorry to bring too much troblues, give me some time to correct,it's hard to bulid this project alone without any income, sorry again!
-# don't trade  for the ULA token now
+# I feel so sorry to bring too much troblues, give me some time to correct,it's hard to bulid this project alone without any income!
+# I try my best to save this project and make it live again,thank you for support(2021-10-10)
+# Those who had ULA tokens before will be compensated,please send me the buy transcation signature
 # SolanaAppWallet
 Solana APP Standard Wallet
 
@@ -13,13 +14,15 @@ Total supply ：200 million
 
 Chinese Name ：乌拉 
 
-Contract ：3N4MaMn4fPm7puzE6oPEwAUody9h5pLUTxc6hZGFdpgM 
+Contract ：EwHqbMUMX33JjWAhxSg9vsX3miWqncsgpnAbqn9nhJwZ (ok, now in use)
+
+Contract ：3N4MaMn4fPm7puzE6oPEwAUody9h5pLUTxc6hZGFdpgM (abandon the account has being leaked) 
 
 Meaning：Token name comes from Russia Putin's parade slogan: rush!! Go forward 
 
 Website：http://www.kikenn.com 
 
-MarketId: J8t6UBqKr44NtSY6oZa21rJxyZkNAophgmG2unnSy36p
+MarketId: 3fxSHmDZx9zFdRucnAtTLAdFtqx2cvo4VaTix2iTgF7k
 
 WhitePaper: http://www.kikenn.com/app/whitepaper.pdf
 
