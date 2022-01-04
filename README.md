@@ -1,6 +1,6 @@
 # the owner account Mnemonic words has being leaked, all tokens are gone, it's very nice for you to return the part of tokens,thank you again (2021-10-8)
 # Connect me with email if you have any questions： AaronSmart@qq.com
-# I feel so sorry to bring too much troblues, give me some time to correct,it's hard to bulid this project alone without any income!
+
 # I try my best to save this project and make it live again,thank you for support(2021-10-10)
 # Those who had ULA tokens before will be compensated,please send me the buy transcation signature
 
