@@ -3,6 +3,9 @@
 # I feel so sorry to bring too much troblues, give me some time to correct,it's hard to bulid this project alone without any income!
 # I try my best to save this project and make it live again,thank you for support(2021-10-10)
 # Those who had ULA tokens before will be compensated,please send me the buy transcation signature
+
+# The project is undergoing internal iterative development and looks forward to a better version(2022-01-04)
+
 # SolanaAppWallet
 Solana APP Standard Wallet
 
