@@ -39,3 +39,16 @@ The public key generation curve is ed25519 Use the official standard generation 
 
 solana-keygen recover prompt://?full-path=m/44'/501'/0'/0' --force 
 
+# road map for 2022(long-term plan)
+First quarter
+Improve the basic functions of Solana payment and related use experience
+
+Second quarter
+Integrate coin swap exchange and aggregate transactions
+
+Third quarter
+Integrating DAPP and related ecosystem applications
+
+Fourth quarter
+Improve the open source and related materials,  let the community drive development projects
+
