@@ -13,8 +13,6 @@ Q4:
 Improve the open source and related materials,  let the community drive the project development
 
 # SolanaAppWallet
-Solana APP Standard Wallet
-
 Project Name : Solana standard mobile wallet 
 
 Symbol ：ULA 
