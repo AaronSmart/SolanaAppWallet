@@ -10,7 +10,7 @@ Q3:
 Integrating DAPP and related ecosystem applications
 
 Q4:
-Improve the open source and related materials,  let the community drive development projects
+Improve the open source and related materials,  let the community drive the project development
 
 # SolanaAppWallet
 Solana APP Standard Wallet
