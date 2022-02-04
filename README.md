@@ -1,15 +1,15 @@
 # The project is undergoing internal iterative development and looks forward to a better version
 # road map for 2022(long-term plan)
-First quarter
+Q1:
 Improve the basic functions of Solana payment and related use experience
 
-Second quarter
+Q2:
 Integrate coin swap exchange and aggregate transactions
 
-Third quarter
+Q3:
 Integrating DAPP and related ecosystem applications
 
-Fourth quarter
+Q4:
 Improve the open source and related materials,  let the community drive development projects
 
 # SolanaAppWallet
