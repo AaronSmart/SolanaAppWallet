@@ -1,10 +1,16 @@
-# the owner account Mnemonic words has being leaked, all tokens are gone, it's very nice for you to return the part of tokens,thank you again (2021-10-8)
-# Connect me with email if you have any questions： AaronSmart@qq.com
+# The project is undergoing internal iterative development and looks forward to a better version
+# road map for 2022(long-term plan)
+First quarter
+Improve the basic functions of Solana payment and related use experience
 
-# I try my best to save this project and make it live again,thank you for support(2021-10-10)
-# Those who had ULA tokens before will be compensated,please send me the buy transcation signature
+Second quarter
+Integrate coin swap exchange and aggregate transactions
 
-# The project is undergoing internal iterative development and looks forward to a better version(2022-01-04)
+Third quarter
+Integrating DAPP and related ecosystem applications
+
+Fourth quarter
+Improve the open source and related materials,  let the community drive development projects
 
 # SolanaAppWallet
 Solana APP Standard Wallet
@@ -39,16 +45,4 @@ The public key generation curve is ed25519 Use the official standard generation 
 
 solana-keygen recover prompt://?full-path=m/44'/501'/0'/0' --force 
 
-# road map for 2022(long-term plan)
-First quarter
-Improve the basic functions of Solana payment and related use experience
-
-Second quarter
-Integrate coin swap exchange and aggregate transactions
-
-Third quarter
-Integrating DAPP and related ecosystem applications
-
-Fourth quarter
-Improve the open source and related materials,  let the community drive development projects
 
