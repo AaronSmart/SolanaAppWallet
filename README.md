@@ -33,6 +33,8 @@ WhitePaper: http://www.kikenn.com/app/whitepaper.pdf
 
 TelegramGroup: https://t.me/joinchat/AJb4NRTFI0dhYzBh
 
+DiscordGroup: https://discord.com/invite/ck5v6pYC
+
 DexlabTrade: https://trade.dexlab.space/#/market/3fxSHmDZx9zFdRucnAtTLAdFtqx2cvo4VaTix2iTgF7k
 
 Goal：One-stop DeFi portal links global digital assets, integrates cross chain, transaction and lending, and accelerates Web3.0 
