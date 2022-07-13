@@ -1,4 +1,5 @@
-# The project is undergoing internal iterative development and looks forward to a better version
+# The project is still under development
+
 # road map for 2022(long-term plan)
 Q1:
 Improve the basic functions of Solana payment and related user experience
