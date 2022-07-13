@@ -24,7 +24,7 @@ Chinese Name ：乌拉
 
 Contract ：EwHqbMUMX33JjWAhxSg9vsX3miWqncsgpnAbqn9nhJwZ 
 
-Meaning：Token name comes from Russia Putin's parade slogan: rush!! Go forward 
+Meaning：Token name comes from Russia Putin's parade slogan: rush!! move forward 
 
 Website：http://www.kikenn.com 
 
