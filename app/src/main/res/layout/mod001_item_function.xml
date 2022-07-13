@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/gv_one_selector" android:layout_width="match_parent" android:layout_height="90dp">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/imageview" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="15dp" android:src="@mipmap/home_page_image_update_password"/>
+    <TextView android:textSize="13sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/textview" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="密码修改"/>
+</LinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lyContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+        <include layout="@layout/common_head" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp">
+                        <!--=============================go back image===================-->
+<!--                        <LinearLayout-->
+<!--                            android:id="@+id/ivBackLinear"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:layout_marginTop="30dp"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <ImageView-->
+<!--                                android:id="@+id/ivBack"-->
+<!--                                style="@style/text_left"-->
+<!--                                android:layout_marginRight="15dp"-->
+<!--                                android:background="@drawable/iv_back3"-->
+<!--                                />-->
+<!--                        </LinearLayout>-->
+                        <!-- ===========================Transfer checking============================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="30dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Transfer result checking "
+                                android:textSize="24dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <!-- ============================Transfer signature==========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="50dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txTransferSignature"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Transfer Signature" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lyTransferSignature"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/tvTransferSignature"
+                                    style="@style/text_left"
+                                    android:text=""
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View style="@style/line_transverse" />
+
+                     <!--=====================================Transfer status============================================-->
+                        <View style="@style/line_transverse" />
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="40dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txDocumentType"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Transfer status" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lyDocumentType"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/tvSignatureStatus"
+                                    style="@style/text_left"
+                                    android:text=""
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tvStatusLogo"
+                                    android:visibility="gone"
+                                    style="@style/edit_right"
+                                    android:layout_marginLeft="15dp"
+                                    android:drawablePadding="10dp"
+                                    android:drawableRight="@drawable/check_succeed"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingBottom="0dp"
+                                    android:paddingRight="2dp"
+                                    android:paddingTop="2dp"
+                                    android:text="" />
+                                <TextView
+                                    android:id="@+id/tvStatusLogo2"
+                                    style="@style/edit_right"
+                                    android:layout_marginLeft="15dp"
+                                    android:drawablePadding="10dp"
+                                    android:drawableRight="@drawable/check_error"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingBottom="0dp"
+                                    android:paddingRight="2dp"
+                                    android:paddingTop="2dp"
+                                    android:text="" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View style="@style/line_transverse" />
+
+                        <!-- ============================reset button ===========================================-->
+                        <LinearLayout
+                            android:id="@+id/lyReset"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="14pt"
+                            android:layout_marginRight="14pt"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center"
+                            android:background="@drawable/buttonchange"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="recheck signature"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                        <!-- ============================new button ===========================================-->
+                        <LinearLayout
+                            android:id="@+id/lyNew"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="14pt"
+                            android:layout_marginRight="14pt"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:background="@drawable/buttonchange"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="copy signature"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:orientation="vertical"></LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

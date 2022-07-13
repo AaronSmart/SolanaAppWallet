@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中的时候 -->
+    <item android:drawable="@drawable/rb_open" android:state_checked="true"/>
+    <!-- 没选中的时候 -->
+    <item android:drawable="@drawable/rb_close" android:state_checked="false"/>
+
+</selector>

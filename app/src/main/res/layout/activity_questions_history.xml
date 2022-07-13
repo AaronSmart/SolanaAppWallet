@@ -1,0 +1,1059 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4A74FE"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_head" />
+
+    <LinearLayout
+        android:id="@+id/lyContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- ===========================head image============================================-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@mipmap/covidhead"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="60dp"
+                            android:text="FIGHT COVID-19"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="90dp"
+                            android:text="WE ARE TOGETHER"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_blue_search"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp">
+                        <!-- ===========================Name============================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Basic Information"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txName"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Name*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/etName"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Phone number============================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txPhoneNumber"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Phone number*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/etPhoneNumber"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Current city============================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txCurrentCity"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Current city*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/etCurrentCity"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Current address============================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txCurrentAddress"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Current address*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/etCurrentAddress"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Arrival date of current address============================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txArrivalDateOfCurrentAddress"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Arrival date of current address*" />
+                        </LinearLayout>
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="fill_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/etArrivalDateOfCurrentAddress"-->
+<!--                                style="@style/edit_left"-->
+<!--                                android:layout_weight="1.0"-->
+<!--                                android:text="" />-->
+<!--                        </LinearLayout>-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txArrivalDateOfCurrentAddress2"
+                                style="@style/text_left"
+                                android:text=" " />
+                            <TextView
+                                android:id="@+id/txArrivalDateOfCurrentAddressCalendar"
+                                style="@style/edit_right"
+                                android:drawableRight="@drawable/calendar" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Next of kin contact phone number===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txNextKinContactPhoneNumber"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Next of kin contact phone number*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/etNextKinContactPhoneNumber"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Next of kin name===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txNextKinName"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Next of kin name*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/etNextKinName"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txDailyHealthDeclaration"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Daily Health Declaration"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <!-- ============================Other city visited in last 14 days===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txOtherCityVisited"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Other city visited in last 14 days?*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/rbOtherCityVisited"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rbOtherCityVisitedYes"
+                                    style="@style/rbYesNoDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:checked="true"
+                                    android:focusable="true"
+                                    android:paddingRight="5dp"
+                                    android:text="Yes" />
+
+                                <RadioButton
+                                    android:id="@+id/rbOtherCityVisitedNo"
+                                    style="@style/rbYesNoDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:focusable="true"
+                                    android:paddingRight="5dp"
+                                    android:text="No" />
+                            </RadioGroup>
+
+                            <View style="@style/line_transverse" />
+                        </LinearLayout>
+                        <!-- ============================wrap the travel info,if select no,hidden this area===========================================-->
+
+                        <LinearLayout
+                            android:id="@+id/lyHealthInfo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <!-- ============================Visited city===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txVisitedCity"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Visited city*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/etVisitedCity"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Flight/voyage date===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txFlight"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Flight/voyage date*" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txVoyageDate"
+                                style="@style/text_left"
+                                android:text=" " />
+                            <TextView
+                                android:id="@+id/txVoyageDateCalendar"
+                                style="@style/edit_right"
+                                android:drawableRight="@drawable/calendar" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Flight/voyage number===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txFlightNumber"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Flight/voyage number*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/etFlightNumber"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Seat number===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txSeatNumber"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Seat number*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/etSeatNumber"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Date of entry===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txDateOfEntry"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Date of entry*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txDateEntry"
+                                style="@style/text_left"
+                                android:text=" " />
+                            <TextView
+                                android:id="@+id/txDateEntryCalendar"
+                                style="@style/edit_right"
+                                android:drawableRight="@drawable/calendar" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================City of entry===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txCityOfEntry"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="City of entry*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/etCityOfEntry"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Destination city===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txDestinationCity"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Destination city*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/etDestinationCity"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Destination address===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txDestinationAddress"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Destination address*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/etDestinationAddress"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        </LinearLayout>
+                        <!-- ============================Contact with confirmed COVID-19 patient in last 14 days?*===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txContactPatient"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Contact with confirmed COVID-19 patient in last 14 days?*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/rbContactPatient"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rbContactPatientYes"
+                                    style="@style/rbYesNoDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:checked="true"
+                                    android:focusable="true"
+                                    android:paddingRight="5dp"
+                                    android:text="Yes" />
+
+                                <RadioButton
+                                    android:id="@+id/rbContactPatientNo"
+                                    style="@style/rbYesNoDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:focusable="true"
+                                    android:paddingRight="5dp"
+                                    android:text="No" />
+
+                                <RadioButton
+                                    android:id="@+id/rbContactPatientDontKnow"
+                                    style="@style/rbYesNoDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:focusable="true"
+                                    android:paddingRight="5dp"
+                                    android:text="Don't Know" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Contact with person with flu-like (fever/respiratory distress)?*===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txContactPatientFluLike"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Contact with confirmed COVID-19 patient in last 14 days?*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/rbContactPatientFluLike"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rbContactPatientFluLikeYes"
+                                    style="@style/rbYesNoDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:checked="true"
+                                    android:focusable="true"
+                                    android:paddingRight="5dp"
+                                    android:text="Yes" />
+
+                                <RadioButton
+                                    android:id="@+id/rbContactPatientFluLikeNo"
+                                    style="@style/rbYesNoDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:focusable="true"
+                                    android:paddingRight="5dp"
+                                    android:text="No" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Report of confirmed COVID-19 case in your neighborhood  today?===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txReportOfConfirmed"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Report of confirmed COVID-19 case in your neighborhood  today?*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/rbReportOfConfirmed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rbReportOfConfirmedYes"
+                                    style="@style/rbYesNoDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:checked="true"
+                                    android:focusable="true"
+                                    android:paddingRight="5dp"
+                                    android:text="Yes" />
+
+                                <RadioButton
+                                    android:id="@+id/rbReportOfConfirmedNo"
+                                    style="@style/rbYesNoDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:focusable="true"
+                                    android:paddingRight="5dp"
+                                    android:text="No" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================2 or more people showing flu-like symptoms at home/work?*===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txTWoOrMoreFluLike"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="2 or more people showing flu-like symptoms at home/work?*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/rbTwoOrMoreFluLike"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rbTwoOrMoreFluLikeYes"
+                                    style="@style/rbYesNoDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:checked="true"
+                                    android:focusable="true"
+                                    android:paddingRight="5dp"
+                                    android:text="Yes" />
+
+                                <RadioButton
+                                    android:id="@+id/rbTwoOrMoreFluLikeNo"
+                                    style="@style/rbYesNoDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:focusable="true"
+                                    android:paddingRight="5dp"
+                                    android:text="No" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Body temperature today*===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txBodyTemperatureToday"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Body temperature today*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/etBodyTemperatureToday"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Do you have following symptoms?(multiple choice)*===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txFluSymptoms"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Do you have following symptoms?(multiple choice)*" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkBoxOne"
+                                style="@style/checkbox_response_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:checked="false"
+                                android:focusable="true"
+                                android:text="Fever, chills, or sweating" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkBoxTwo"
+                                style="@style/checkbox_response_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:checked="false"
+                                android:focusable="true"
+                                android:text="Difficulty breathing (not severe)" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkBoxThree"
+                                style="@style/checkbox_response_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:checked="false"
+                                android:focusable="true"
+                                android:text="New or worsening cough" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkBoxFour"
+                                style="@style/checkbox_response_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:checked="false"
+                                android:focusable="true"
+                                android:text="Sore throat" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkBoxFive"
+                                style="@style/checkbox_response_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:checked="false"
+                                android:focusable="true"
+                                android:text="Aching throughout the body" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkBoxSix"
+                                style="@style/checkbox_response_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:checked="false"
+                                android:focusable="true"
+                                android:text="Vomiting or diarrhea" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkBoxSeven"
+                                style="@style/checkbox_response_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:checked="false"
+                                android:focusable="true"
+                                android:text="None of the above" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================ COVID-19 Test Status*===========================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txTestStatus"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text=" COVID-19 Test Status*" />
+                        </LinearLayout>
+
+                        <com.econet.app.uitl.MultiRadioGroup2
+                            android:id="@+id/rg_problem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/testStatus1"
+                                    style="@style/rbYesNoDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:checked="true"
+                                    android:focusable="true"
+                                    android:paddingRight="5dp"
+                                    android:text="Never received COVID-19 test" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/testStatus2"
+                                    style="@style/rbYesNoDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="true"
+                                    android:paddingRight="5dp"
+                                    android:text="Positive for COVID-19 test" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/testStatus3"
+                                    style="@style/rbYesNoDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:focusable="true"
+                                    android:paddingRight="5dp"
+                                    android:text="Negative for COVID-19 test" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/testStatus4"
+                                    style="@style/rbYesNoDetails"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:focusable="true"
+                                    android:paddingRight="5dp"
+                                    android:text="Pending results" />
+                            </LinearLayout>
+                        </com.econet.app.uitl.MultiRadioGroup2>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

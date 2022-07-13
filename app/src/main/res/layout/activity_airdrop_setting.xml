@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lyContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp">
+                        <!--=============================go back image===================-->
+                        <LinearLayout
+                            android:id="@+id/ivBackLinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="30dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ivBack"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/iv_back3"
+                                />
+                        </LinearLayout>
+                        <!-- ===========================Start Airdrop============================================-->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="30dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Start Airdrop"
+                                android:textSize="24dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <!-- ============================Your Name===========================================-->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txName"
+                                style="@style/text_left"
+                                android:maxLength="50"
+                                android:layout_marginRight="15dp"
+                                android:text="BlockId" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/etBlockId"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:hint="Enter the block id"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Phone Number ===========================================-->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txPassword"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="Block Total Transactions" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/etTotalCount"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:maxLength="50"
+                                android:hint=""
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+                        <!-- ============================Mnemonic words ===========================================-->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txConfirmPassword"
+                                style="@style/text_left"
+                                android:layout_marginRight="15dp"
+                                android:text="load singers" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/etSingerCount"
+                                style="@style/edit_left"
+                                android:layout_weight="1.0"
+                                android:maxLength="200"
+                                android:hint=""
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View style="@style/line_transverse" />
+
+                        <!-- ============================reset button ===========================================-->
+                        <LinearLayout
+                            android:id="@+id/lyStart"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="14pt"
+                            android:layout_marginRight="14pt"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center"
+                            android:background="@drawable/buttonchange"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Get the block Transactions"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lyLoad"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="14pt"
+                            android:layout_marginRight="14pt"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center"
+                            android:background="@drawable/buttonchange"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Load the recipient account"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lyTransfer"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="14pt"
+                            android:layout_marginRight="14pt"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center"
+                            android:background="@drawable/buttonchange"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Start AirDrop"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:orientation="vertical"></LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

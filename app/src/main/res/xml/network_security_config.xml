@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:tools="http://schemas.android.com/tools">
+    <base-config cleartextTrafficPermitted="true">
+<!--        <trust-anchors>-->
+<!--            <certificates src="@raw/keystore" />-->
+<!--            <certificates src="system" />-->
+<!--            <certificates src="user" />-->
+<!--        </trust-anchors>-->
+    </base-config>
+    <!-- add custom certificate-->
+    <!-- https://developer.android.google.cn/training/articles/security-config#ConfigCustom -->
+<!--    <domain-config>-->
+<!--        <domain includeSubdomains="true">rpc.ankr.com</domain>-->
+<!--        <trust-anchors>-->
+<!--            <certificates src="@raw/keystore" />-->
+<!--        </trust-anchors>-->
+<!--    </domain-config>-->
+</network-security-config>
