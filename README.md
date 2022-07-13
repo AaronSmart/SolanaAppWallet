@@ -42,6 +42,14 @@ Goal：One-stop DeFi portal links global digital assets, integrates cross chain,
 
 Solana APP is another version of sollet wallet for mobile 
 
+Solana Pay is the entry point into the system. It lives directly between web2 & web3,    
+receiving web2 payloads & converting them into web3 transactions. The power of this 
+really can’t be overstated. The contours of this design space are unexplored and sure to 
+hold amazing things.
+
+Cryptocurrencies are bringing forward a decentralized world, and Solana Pay is a perfect 
+example of what the possibilities are.
+
 Solana standard Hierachical Deterministic Wallet, standard HD path m/44'/501'/0'/0' 
 
 The public key generation curve is ed25519 Use the official standard generation method. 
