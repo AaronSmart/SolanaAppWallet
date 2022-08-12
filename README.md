@@ -1,4 +1,4 @@
-# The project is still under hard development
+# The project is still under hard development，looking for seed fund to move forword
 
 # road map for 2022(long-term plan)
 Q1:
