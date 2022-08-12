@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+       <!-- <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="60dp">
+            <RelativeLayout android:id="@+id/rl_info" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <ImageView android:id="@+id/iv_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:src="@drawable/home_title_head" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="22sp" android:textColor="#2b73bf" android:id="@+id/tv_xm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="张三" android:layout_toRightOf="@+id/iv_head" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_msg" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+                <ImageView android:id="@+id/iv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_title_message" android:layout_centerVertical="true"/>
+                <RelativeLayout android:id="@+id/rl_pop" android:background="@drawable/home_title_message_pop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10dp" android:layout_toRightOf="@+id/iv_message">
+                    <TextView android:textColor="#ffffff" android:id="@+id/tv_pop_counts" android:paddingLeft="3dp" android:paddingRight="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <net.evecom.mpas.widget.homepage.MarqueTextView android:textSize="18sp" android:textColor="#2b73bf" android:text="道路安全守护神 我是最帅交警 民警是我民警是我"
+			android:ellipsize="marquee" android:id="@+id/tv_dqqw" android:focusable="true" android:focusableInTouchMode="true" 
+			android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:scrollHorizontally="true"
+			android:singleLine="true" android:layout_toLeftOf="@+id/rl_msg" android:layout_toRightOf="@+id/rl_info" android:layout_centerVertical="true" 
+			android:marqueeRepeatLimit="marquee_forever"/>
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/home_title_line" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>  -->
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="#E0E0E0" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_pm" android:background="@drawable/bg_pm" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/tv_jrpm" android:paddingLeft="20dp" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="今日排名  -／-"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="90dp">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_yls" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="15dp" android:text="-"/>
+                            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一路扫"/>
+                        </LinearLayout>
+                        <View android:background="#ffffff" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginTop="15dp" android:layout_marginBottom="15dp"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_yjcz" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="15dp" android:text="-"/>
+                            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预警处置"/>
+                        </LinearLayout>
+                        <View android:background="#ffffff" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginTop="15dp" android:layout_marginBottom="15dp"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_xccf" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="15dp" android:text="-"/>
+                            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="现场处罚"/>
+                        </LinearLayout>
+                        <View android:background="#ffffff" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginTop="15dp" android:layout_marginBottom="15dp"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_tzdj" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="15dp" android:text="-"/>
+                            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="台账登记"/>
+                        </LinearLayout>
+                        <View android:background="#ffffff" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginTop="15dp" android:layout_marginBottom="15dp"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_wfcj" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="15dp" android:text="-"/>
+                            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="违法采集"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="160dp"
+                   android:background="@mipmap/home_page_banner"
+                   android:orientation="vertical" >
+
+                   <TextView
+                       android:id="@+id/tvPoliceId"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignBaseline="@+id/tvPoliceName"
+                       android:layout_alignBottom="@+id/tvPoliceName"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="74dp"
+                       android:text="to"
+                       android:textColor="#ffffff"
+                       android:textSize="18sp" />
+
+                   <TextView
+                       android:id="@+id/tvPoliceOffice1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/tvPoliceId"
+                       android:layout_alignLeft="@+id/tvPoliceName"
+                       android:text="  MetaVerse"
+                       android:textColor="#ffffff"
+                       android:textSize="18sp" />
+
+                   <TextView
+                       android:id="@+id/tvPoliceName"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentTop="true"
+                       android:layout_marginRight="15dp"
+                       android:layout_marginTop="55dp"
+                       android:layout_toLeftOf="@+id/tvPoliceId"
+                       android:gravity="center"
+                       android:text="Welcome"
+                       android:textColor="#ffffff"
+                       android:textSize="18sp" />
+
+                   <TextView
+                       android:id="@+id/tvPoliceOffice2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignLeft="@+id/tvPoliceOffice1"
+                       android:layout_below="@+id/tvPoliceOffice1"
+                       android:text="Start Your Journey"
+                       android:textColor="#ffffff"
+                       android:textSize="18sp" />
+
+               </RelativeLayout>
+   
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_scene_one" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp">
+                    <TextView android:textSize="18sp" android:textColor="#333333" android:paddingLeft="20dp" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SceneOne"/>
+                    <com.econet.app.homepage.SelectGridView android:id="@+id/gv_scene_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="4"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_scene_two" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+                    <TextView android:textSize="18sp" android:textColor="#333333" android:paddingLeft="20dp" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SceneTwo"/>
+                    <com.econet.app.homepage.SelectGridView android:id="@+id/gv_scene_two" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="4"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_scene_three" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+                    <TextView android:textSize="18sp" android:textColor="#333333" android:paddingLeft="20dp" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SceneThree"/>
+                    <com.econet.app.homepage.SelectGridView android:id="@+id/gv_scene_three" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="4"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_scene_four" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+                    <TextView android:textSize="18sp" android:textColor="#333333" android:paddingLeft="20dp" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SceneFour"/>
+                    <com.econet.app.homepage.SelectGridView android:id="@+id/gv_scene_four" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="4"/>
+                </LinearLayout>
+               <LinearLayout android:orientation="vertical" android:id="@+id/ll_scene_five" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+                    <TextView android:textSize="18sp" android:textColor="#333333" android:paddingLeft="20dp" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SceneFive"/>
+                    <com.econet.app.homepage.SelectGridView android:id="@+id/gv_scene_five" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="4"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_scene_six" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+                    <TextView android:textSize="18sp" android:textColor="#333333" android:paddingLeft="20dp" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SceneSix"/>
+                    <com.econet.app.homepage.SelectGridView android:id="@+id/gv_scene_six" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="4"/>
+                </LinearLayout>
+                <LinearLayout android:visibility="gone" android:orientation="vertical" android:id="@+id/ll_scene_seven" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+                    <TextView android:textSize="18sp" android:textColor="#333333" android:paddingLeft="20dp" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SceneSeven"/>
+                    <com.econet.app.homepage.SelectGridView android:id="@+id/gv_scene_seven" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="4"/>
+                </LinearLayout>
+                <LinearLayout android:visibility="gone" android:orientation="vertical" android:id="@+id/ll_scene_eight" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+                    <TextView android:textSize="18sp" android:textColor="#333333" android:paddingLeft="20dp" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SceneEight"/>
+                    <com.econet.app.homepage.SelectGridView android:id="@+id/gv_scene_eight" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="4"/>
+                </LinearLayout>
+                <LinearLayout android:visibility="gone" android:orientation="vertical" android:id="@+id/ll_scene_nine" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+                    <TextView android:textSize="18sp" android:textColor="#333333" android:paddingLeft="20dp" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SceneNine"/>
+                    <com.econet.app.homepage.SelectGridView android:id="@+id/gv_scene_nine" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="4"/>
+                </LinearLayout>
+                <LinearLayout android:visibility="gone" android:orientation="vertical" android:id="@+id/ll_scene_ten" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+                    <TextView android:textSize="18sp" android:textColor="#333333" android:paddingLeft="20dp" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SceneTen"/>
+                    <com.econet.app.homepage.SelectGridView android:id="@+id/gv_scene_ten" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="4"/>
+                </LinearLayout>
+                <LinearLayout  android:orientation="vertical" android:id="@+id/ll_scene_eleven" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+                    <TextView android:textSize="18sp" android:textColor="#333333" android:paddingLeft="20dp" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SceneEleven"/>
+                    <com.econet.app.homepage.SelectGridView android:id="@+id/gv_scene_eleven" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="4"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">SolWallet</string>
+    <string name="red_msg">Urgently contact with Doctor and requires a 14-day quarantine strictly.</string>
+    <string name="yellow_msg">Don\'t Worry But contact with Doctor and seven-day quarantine is required</string>
+    <string name="green">You are safe. But follow WHO instruction to be safe forever</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_login2">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="str_scan_title">扫一扫</string>
+    <string name="str_open_light">开启闪光灯</string>
+    <string name="str_close_light">关闭闪光灯</string>
+    <string name="str_scan_hint">取景框对准二维码, 即可自动扫描</string>
+
+
+    <string name="empty_text">no data,press to request</string>
+
+    <!-- Main activity strings -->
+    <string name="label_hello_world">I\'m a wallet!</string>
+
+    <!-- Authorize dapp fragment strings -->
+    <string name="label_authorize_dapp">Authorize dapp</string>
+    <string name="label_verification_state">Status:</string>
+    <string name="label_verification_scope">Scope:</string>
+
+    <!-- Sign Payload fragment strings -->
+    <string name="label_sign_transactions">Sign transaction(s)</string>
+    <string name="label_sign_messages">Sign message(s)</string>
+    <string name="label_num_txns">Num payloads:</string>
+    <string name="label_simulate_authorization_failed">Simulate auth token invalid</string>
+    <string name="label_simulate_invalid_payloads">Simulate first payload invalid</string>
+    <string name="label_simulate_too_many_payloads">Simulate too many payloads</string>
+
+    <!-- Send Transaction fragment strings -->
+    <string name="label_send_transactions">Sending transaction(s)</string>
+    <string name="label_cluster">Cluster:</string>
+    <string name="label_simulate_transactions_submitted">Simulate submitted</string>
+    <string name="label_simulate_transactions_not_submitted">Simulate submit failed</string>
+    <string name="label_send_transaction_to_cluster">Send transaction to cluster</string>
+
+    <!-- Common strings -->
+    <string name="label_authorize">Authorize</string>
+    <string name="label_decline">Decline</string>
+
+    <!-- Client verification states -->
+    <string name="str_verification_in_progress">Verification in progress</string>
+    <string name="str_verification_succeeded">Verification successful</string>
+    <string name="str_verification_failed">Verification failed</string>
+    <string name="str_verification_not_verifiable">Client not verifiable</string>
+</resources>
