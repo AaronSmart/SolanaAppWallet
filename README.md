@@ -1,6 +1,6 @@
 # The project is still under hard development，looking for seed fund to move forword
 
-# road map for 2022(long-term plan)
+# road map for 2022-2023(long-term plan)
 Q1:
 Improve the basic functions of Solana payment and related user experience
 
