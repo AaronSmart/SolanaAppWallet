@@ -1,6 +1,6 @@
 # The project is still under hard development，looking for seed fund to move forword
 
-# road map for 2022-2023(long-term plan)
+# road map for 2023-2024(long-term plan)
 Q1:
 Improve the basic functions of Solana payment and related user experience
 
@@ -37,6 +37,8 @@ TelegramGroup: https://t.me/joinchat/AJb4NRTFI0dhYzBh
 DiscordGroup: https://discord.com/invite/ck5v6pYC
 
 DexlabTrade: https://trade.dexlab.space/#/market/3fxSHmDZx9zFdRucnAtTLAdFtqx2cvo4VaTix2iTgF7k
+
+lastest ppt:https://docs.google.com/presentation/d/1ENAoS6Gc0DXdodA_40_xqjy3sctXOfUsZPC3K-eGa5o/edit?usp=sharing
 
 Goal：One-stop DeFi portal links global digital assets, integrates cross chain, transaction and lending, and accelerates Web3.0 
 
